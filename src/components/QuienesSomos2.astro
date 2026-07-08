@@ -1,0 +1,115 @@
+<section id="quienes-somos" class="container">
+  <h1 class="text-center text-3xl font-bold mb-[50px]">Quienes Somos</h1>
+  <div class="flex justify-center items-center flex-wrap gap-3 text-xl">
+    <div class="card card-servicio">
+      <h2 class="font-bold">Misión</h2>
+      <p>aqui colocar misión</p>
+      <p class="highlight">escribir</p>
+    </div>
+
+    <div class="card card-confianza text-white">
+      <h2 class="font-bold">Visión</h2>
+      <p>
+        Aqui colocar vision 2.
+      </p>
+    </div>
+
+    <div class="card card-calidad">
+      <h2 class="font-bold">Reconocimientos</h2>
+      <p class="">
+        Reconocimientos por la Asamblea Nacional
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Fondos personalizados por card */
+  .card-servicio {
+    background-image: url("/mision.png");
+    width: 300px;
+    height: 600px;
+  }
+
+  .card-confianza {
+    background-image: url("/vision.jpg");
+    width: 300px;
+    height: 600px;
+  }
+
+  .card-calidad {
+    background-image: url("/calidad.png");
+    width: 300px;
+    height: 600px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    height: 350px; /* ← Esto mantiene el tamaño fijo */
+    padding: 30px;
+    background-size: cover; /* La imagen llena el card */
+    background-position: center; /* Centrada */
+    background-repeat: no-repeat;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* El contenido se va al fondo */
+    border-right: 7px solid #d4af37;
+    border-bottom: 7px solid #000;
+    overflow: hidden; /* Por si algo se sale del borde */
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .card-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .card-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    font-style: italic;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+    }
+
+    .card {
+      min-width: 100%;
+    }
+  }
+</style>
