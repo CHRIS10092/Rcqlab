@@ -1,14 +1,14 @@
 ---
 const perfiles = [
   {
-    nombre: "Mister Galo",
-    especialidad: "Docente 1",
-    img: "/perfil/gmail/fotoinicial.jpg",
+    nombre: "Metrologia Fácil",
+    especialidad: "Colaboradores",
+    img: "/perfil/gmail/metrologia.jpeg",
   },
   {
-    //nombre: "Miss 1",
-    especialidad: "Docente 2",
-    img: "/perfil/gmail/fotoinicial.jpg",
+    //nombre: "Si Meet",
+    especialidad: "Colaboradores ",
+    img: "/perfil/gmail/simeet.jpeg",
   },
   {
     //  nombre: "Miss2",
@@ -26,7 +26,7 @@ const perfiles = [
         perfiles.map((perfil) => (
           <div class="swiper-slide">
             <div class=" testimonial flex justify-center items-center flex-col">
-              <img class="testimonial-avatar" src={perfil.img} />
+              <img class="testimonial-avatar"  src={perfil.img} />
               <p class="testimonial-quote">{perfil.especialidad}</p>
               <span class="text-yellow-500 font-bold">{perfil.nombre}</span>
             </div>
@@ -45,11 +45,11 @@ const perfiles = [
 
 <style>
   .testimonial-carousel-container {
-    background: url("/cirugiaDental.webp") no-repeat center bottom;
+    background: url("/neuronas.gif") no-repeat center bottom;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .testimonial-carousel-container:before {
@@ -81,7 +81,7 @@ const perfiles = [
   .testimonial-avatar {
     border-radius: 50%;
     margin-bottom: 20px;
-    height: 300px;
+    height: 350px;
   }
 
   .testimonial-quote {
