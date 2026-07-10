@@ -3,6 +3,8 @@ dist/
 
 # generated types
 .astro/
+.netlify/build/
+.netlify/v1/functions/
 
 # dependencies
 node_modules/

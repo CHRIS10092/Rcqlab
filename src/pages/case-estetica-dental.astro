@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import ListaServices from "../components/ListaServices.astro";
 import NavBar from "../components/NavBar.astro";
 import Whatsapp from "../components/Whatsapp.astro";
+import { casos } from "../const/Cases/constCasesDentalStetic";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -15,7 +16,7 @@ import Layout from "../layouts/Layout.astro";
   <div class="w-full py-14 md:px-8">
     <div class="flex flex-col md:flex-row items-center">
       <div class="flex flex-1 justify-center items-center gap-2">
-        <Cases />
+        <Cases title={"Estetica Dental"} casos={casos} />
       </div>
 
       <ListaServices />
